@@ -17,18 +17,18 @@ public class App {
     private static final Logger LOGGER = LoggerFactory.getLogger(App.class);
 
 
-	@GetMapping("/invoice")
-	public Invoice toInstant(){
+	@GetMapping("/some")
+	public SomeBean toInstant(){
         LOGGER.info("currentTimeMillis: {}", System.currentTimeMillis());
-		return new Invoice();
+		return new SomeBean();
 	}
 
-	@PostMapping("/invoice")
-	public Invoice toInstant(@RequestBody Invoice invoice){
-	    invoice.setModified(Instant.now());
-	    LOGGER.info(invoice.toString());
+	@PostMapping("/some")
+	public SomeBean toInstant(@RequestBody SomeBean someBean){
+	    someBean.setModified(Instant.now());
+	    LOGGER.info(someBean.toString());
 	    LOGGER.info("currentTimeMillis: {}", System.currentTimeMillis());
-		return invoice;
+		return someBean;
 	}
 
 	public static void main(String[] args) {

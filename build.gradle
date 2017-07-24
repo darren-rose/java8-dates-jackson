@@ -22,10 +22,11 @@ repositories {
 
 
 dependencies {
-	compile('org.springframework.boot:spring-boot-starter-web')
-	compile('com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.6.5')
+    compile('org.springframework.boot:spring-boot-actuator')
+    compile('org.springframework.boot:spring-boot-starter-web')
+    compile('com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.6.5')
 
     compileOnly('org.projectlombok:lombok:1.16.16')
 
-	testCompile('org.springframework.boot:spring-boot-starter-test')
+    testCompile('org.springframework.boot:spring-boot-starter-test')
 }

@@ -12,7 +12,7 @@ import java.time.Instant;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class Invoice {
+public class SomeBean {
     private Instant created = Instant.now();
     private Instant modified;
 }
