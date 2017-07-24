@@ -8,4 +8,6 @@ demonstrates Java 8 Instant serialisation and de-serialisation
 
 gradle bootrun
 
-http://localhost:10699/someBean
+```GET http://localhost:10699/some```
+
+```POST http://localhost:10699/some  {"created" : 1500930212091 } ```
